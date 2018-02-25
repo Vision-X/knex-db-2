@@ -8,7 +8,7 @@ module.exports = {
       return database('coffees')
             .select('*')
             .where('id', id)
-            .first()
+            .first();
     },
     create(coffee) {
       return database('coffees')
@@ -27,6 +27,6 @@ module.exports = {
       return database('coffees')
             .select('*')
             .where('id', id)
-            .del()
+            .del();
     }
 };
